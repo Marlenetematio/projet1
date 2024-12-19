@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Détails du Projet</title>
+</head>
+<body>
+    <h1>{{ projet.nom }}</h1>
+    <p>{{ projet.description }}</p>
+    <h2>Tâches associées</h2>
+    <ul>
+        {% for tache in taches %}
+            <li>{{ tache.titre }} - {{ tache.statut }}</li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'liste_projets' %}">Retour à la liste des projets</a>
+</body>
+</html>

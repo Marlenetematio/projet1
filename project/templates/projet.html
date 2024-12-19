@@ -1,0 +1,7 @@
+<!-- templates/projets/liste_projets.html -->
+<h1>Liste des projets</h1>
+<ul>
+    {% for projet in projets %}
+        <li>{{ projet.nom }} ({{ projet.date_debut }} - {{ projet.date_fin }})</li>
+    {% endfor %}
+</ul>

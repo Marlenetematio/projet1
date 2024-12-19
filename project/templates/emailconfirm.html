@@ -1,0 +1,11 @@
+{% autoescape off %}
+Bienvenu sur M@rlene Login System
+Bonjour{{name}}
+Confirmez votre adresse email en cliquant sur le lien suivant:
+Lien: https//{{domain}}{% url 'activate' uidb64=uid token=token   %}
+
+
+
+
+
+{% endautoescape %}
